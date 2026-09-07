@@ -1,0 +1,25 @@
+{
+  "name": "coedit-ds",
+  "version": "1.0.0",
+  "description": "DS04 — Distributed collaborative document editing (Google Docs simulation) built on an RGA CRDT",
+  "main": "src/collab/server.js",
+  "scripts": {
+    "start": "./scripts/start-cluster.sh 2",
+    "stop": "./scripts/stop-cluster.sh",
+    "directory": "node src/directory/server.js",
+    "storage": "node src/storage/server.js",
+    "collab": "node src/collab/server.js",
+    "gateway": "node src/gateway/server.js",
+    "cli": "node src/client/cli/index.js",
+    "test": "node tests/run-all.js",
+    "test:crdt": "node tests/test-crdt.js",
+    "test:parity": "node tests/test-parity.js",
+    "demo": "node scripts/demo.js",
+    "bench": "node scripts/benchmark.js",
+    "figures": "python3 scripts/make-figures.py"
+  },
+  "keywords": ["distributed-systems", "crdt", "rga", "collaborative-editing", "websocket", "replication"],
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": { "ws": "^8.18.0" }
+}
