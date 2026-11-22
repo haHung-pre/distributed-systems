@@ -61,7 +61,7 @@ share it with the other two (`Share` panel), open it everywhere and type.
 
 ```bash
 node scripts/demo.js         # scripted walkthrough of all 9 mandatory scenarios
-npm test                     # 19 automated tests
+npm test                     # 23 automated tests
 node scripts/benchmark.js    # scalability sweep -> docs/benchmark.json
 ./scripts/stop-cluster.sh
 ```
@@ -335,16 +335,39 @@ performance. **Delivered: 8 / 2 / 5 / 3 / 1 = 19.**
 | R05 | fault | **storage outage** → DLQ buffers → drains on recovery, zero loss |
 | S01 | security | missing / garbage / **forged** tokens rejected; PBKDF2 on disk |
 | S02 | security | stranger cannot read, viewer cannot write or re-share |
+| R06 | fault | **regression**: reconnect with a pre-snapshot version vector across a replica restart — no silent op loss |
+| R07 | fault | **regression**: a snapshot carries its history, or honestly refuses to serve a partial delta |
 | S03 | security | malformed op, **site spoofing**, oversized payload, path traversal |
+| S04 | security | **regression**: revoking edit rights takes effect on an already-open socket |
+| S05 | security | **regression**: ops with unresolvable causal origins cannot grow memory without bound |
 | P01 | performance | latency, throughput, convergence, all replicas identical |
 
 Every run writes `tests/report.json`.
+
+### Adversarial self-review
+
+A passing suite only proves what it exercises. After the functional tests were
+green, the system was deliberately attacked to find the cases the tests avoided.
+Three real defects turned up — all fixed, each now pinned by a regression test
+that fails against the pre-fix code:
+
+| Defect | Impact before the fix | Fix |
+|---|---|---|
+| `RGA.fromSnapshot()` dropped the operation log | A client offline before a snapshot lost **205 of 209 characters** after a replica restart — silently, and anti-entropy did not repair it | Snapshots are versioned (v2) and carry their history; `canServeDelta()` forces a full state transfer when history is genuinely missing (R06, R07) |
+| `canEdit` cached for the socket's lifetime | A user downgraded to viewer **kept writing**, zero rejections | Directory re-derives the role from the live ACL; replicas re-validate with a bounded cache, `ACL_REVALIDATE_MS` (S04) |
+| `pending` map had no cap or TTL | 50 000 ops with bogus origins parked forever, **26 MB** per document | Bounded by capacity + TTL, sheds oldest first, counts and logs what it discards (S05) |
+
+All three lived at a boundary the original tests never crossed: past the
+200-operation snapshot threshold, across a mid-session permission change, and
+under adversarial input. Every original fixture used documents far below the
+snapshot threshold — which is exactly why the first defect survived an
+otherwise-passing suite.
 
 ---
 
 ## 8. Results
 
-All 19 tests and all 9 demo scenarios pass.
+All 23 tests (including four regression tests for defects found during adversarial review) and all 9 demo scenarios pass.
 
 ### Scalability
 
@@ -477,7 +500,7 @@ coedit-ds/
 │       ├── engine.js             # Node client: reconnect, failover, offline
 │       ├── cli/index.js          # command-line client
 │       └── web/{index.html,app.js,rga.browser.js}
-├── tests/{run-all.js,harness.js} # 19 tests -> report.json
+├── tests/{run-all.js,harness.js} # 23 tests -> report.json
 ├── scripts/
 │   ├── start-cluster.sh, stop-cluster.sh
 │   ├── demo.js                   # the 9 mandatory scenarios
