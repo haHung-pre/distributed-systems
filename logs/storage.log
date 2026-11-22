@@ -1,0 +1,12 @@
+{"ts":"2026-09-14T12:04:16.039Z","node":"storage-1","level":"info","event":"listening","port":7100,"role":"storage","dataDir":"data/docs"}
+{"ts":"2026-09-14T12:04:57.998Z","node":"storage-1","level":"info","event":"shutdown","sig":"SIGTERM"}
+[36m2026-09-14T12:05:01.529Z [storage-1] INFO  listening[0m {"port":7100,"role":"storage","dataDir":"data/docs"}
+[36m2026-09-14T12:05:01.581Z [storage-1] INFO  oplog_loaded[0m {"docId":"doc-b54b1afbbdd3","ops":14,"seq":14}
+[36m2026-09-14T12:05:02.582Z [storage-1] INFO  snapshot_written[0m {"docId":"doc-a655b922de0a","seq":225,"elements":225}
+[36m2026-09-14T12:05:15.078Z [storage-1] INFO  snapshot_written[0m {"docId":"doc-f7ad7bc74068","seq":270,"elements":270}
+[36m2026-09-14T12:05:53.121Z [storage-1] INFO  snapshot_written[0m {"docId":"doc-0451d5ce053b","seq":224,"elements":224}
+[36m2026-09-14T12:09:24.496Z [storage-1] INFO  shutdown[0m {"sig":"SIGTERM"}
+[36m2026-09-14T12:09:28.025Z [storage-1] INFO  listening[0m {"port":7100,"role":"storage","dataDir":"data/docs"}
+[36m2026-09-14T12:09:28.063Z [storage-1] INFO  oplog_loaded[0m {"docId":"doc-936b56dbc45c","ops":14,"seq":14}
+[36m2026-09-14T12:09:29.504Z [storage-1] INFO  snapshot_written[0m {"docId":"doc-0f44f06c43a9","seq":225,"elements":225}
+[36m2026-09-14T12:09:41.946Z [storage-1] INFO  snapshot_written[0m {"docId":"doc-d1142db66252","seq":270,"elements":270}

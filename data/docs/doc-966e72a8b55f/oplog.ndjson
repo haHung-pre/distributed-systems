@@ -1,0 +1,6 @@
+{"seq":1,"op":{"t":"ins","site":"t814e1ad9-ba9d71","ctr":1,"lam":1,"after":"ROOT","ch":"l","id":"t814e1ad9-ba9d71:1"},"at":1789387775392,"by":"collab-1"}
+{"seq":2,"op":{"t":"ins","site":"t814e1ad9-ba9d71","ctr":2,"lam":2,"after":"t814e1ad9-ba9d71:1","ch":"e","id":"t814e1ad9-ba9d71:2"},"at":1789387775392,"by":"collab-1"}
+{"seq":3,"op":{"t":"ins","site":"t814e1ad9-ba9d71","ctr":3,"lam":3,"after":"t814e1ad9-ba9d71:2","ch":"g","id":"t814e1ad9-ba9d71:3"},"at":1789387775392,"by":"collab-1"}
+{"seq":4,"op":{"t":"ins","site":"t814e1ad9-ba9d71","ctr":4,"lam":4,"after":"t814e1ad9-ba9d71:3","ch":"i","id":"t814e1ad9-ba9d71:4"},"at":1789387775392,"by":"collab-1"}
+{"seq":5,"op":{"t":"ins","site":"t814e1ad9-ba9d71","ctr":5,"lam":5,"after":"t814e1ad9-ba9d71:4","ch":"t","id":"t814e1ad9-ba9d71:5"},"at":1789387775392,"by":"collab-1"}
+{"seq":6,"op":{"t":"ins","site":"t814e1ad9-ba9d71","ctr":6,"lam":6,"after":"t814e1ad9-ba9d71:5","ch":"-","id":"t814e1ad9-ba9d71:6"},"at":1789387775392,"by":"collab-1"}

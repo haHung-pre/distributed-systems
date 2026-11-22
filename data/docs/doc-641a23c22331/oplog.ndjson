@@ -1,0 +1,17 @@
+{"seq":1,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":1,"lam":1,"after":"ROOT","ch":"p","id":"tec43450c-a0d4e8:1"},"at":1789387489324,"by":"collab-1"}
+{"seq":2,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":2,"lam":2,"after":"tec43450c-a0d4e8:1","ch":"e","id":"tec43450c-a0d4e8:2"},"at":1789387489324,"by":"collab-1"}
+{"seq":3,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":3,"lam":3,"after":"tec43450c-a0d4e8:2","ch":"r","id":"tec43450c-a0d4e8:3"},"at":1789387489324,"by":"collab-1"}
+{"seq":4,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":4,"lam":4,"after":"tec43450c-a0d4e8:3","ch":"s","id":"tec43450c-a0d4e8:4"},"at":1789387489324,"by":"collab-1"}
+{"seq":5,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":5,"lam":5,"after":"tec43450c-a0d4e8:4","ch":"i","id":"tec43450c-a0d4e8:5"},"at":1789387489324,"by":"collab-1"}
+{"seq":6,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":6,"lam":6,"after":"tec43450c-a0d4e8:5","ch":"s","id":"tec43450c-a0d4e8:6"},"at":1789387489324,"by":"collab-1"}
+{"seq":7,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":7,"lam":7,"after":"tec43450c-a0d4e8:6","ch":"t","id":"tec43450c-a0d4e8:7"},"at":1789387489324,"by":"collab-1"}
+{"seq":8,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":8,"lam":8,"after":"tec43450c-a0d4e8:7","ch":"e","id":"tec43450c-a0d4e8:8"},"at":1789387489324,"by":"collab-1"}
+{"seq":9,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":9,"lam":9,"after":"tec43450c-a0d4e8:8","ch":"d","id":"tec43450c-a0d4e8:9"},"at":1789387489324,"by":"collab-1"}
+{"seq":10,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":10,"lam":10,"after":"tec43450c-a0d4e8:9","ch":" ","id":"tec43450c-a0d4e8:10"},"at":1789387489324,"by":"collab-1"}
+{"seq":11,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":11,"lam":11,"after":"tec43450c-a0d4e8:10","ch":"c","id":"tec43450c-a0d4e8:11"},"at":1789387489324,"by":"collab-1"}
+{"seq":12,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":12,"lam":12,"after":"tec43450c-a0d4e8:11","ch":"o","id":"tec43450c-a0d4e8:12"},"at":1789387489324,"by":"collab-1"}
+{"seq":13,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":13,"lam":13,"after":"tec43450c-a0d4e8:12","ch":"n","id":"tec43450c-a0d4e8:13"},"at":1789387489324,"by":"collab-1"}
+{"seq":14,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":14,"lam":14,"after":"tec43450c-a0d4e8:13","ch":"t","id":"tec43450c-a0d4e8:14"},"at":1789387489324,"by":"collab-1"}
+{"seq":15,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":15,"lam":15,"after":"tec43450c-a0d4e8:14","ch":"e","id":"tec43450c-a0d4e8:15"},"at":1789387489324,"by":"collab-1"}
+{"seq":16,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":16,"lam":16,"after":"tec43450c-a0d4e8:15","ch":"n","id":"tec43450c-a0d4e8:16"},"at":1789387489324,"by":"collab-1"}
+{"seq":17,"op":{"t":"ins","site":"tec43450c-a0d4e8","ctr":17,"lam":17,"after":"tec43450c-a0d4e8:16","ch":"t","id":"tec43450c-a0d4e8:17"},"at":1789387489324,"by":"collab-1"}

@@ -1,0 +1,6 @@
+{"seq":1,"op":{"t":"ins","site":"t522bef66-90230f","ctr":1,"lam":1,"after":"ROOT","ch":"c","id":"t522bef66-90230f:1"},"at":1789387507209,"by":"collab-2"}
+{"seq":2,"op":{"t":"ins","site":"t522bef66-90230f","ctr":2,"lam":2,"after":"t522bef66-90230f:1","ch":"l","id":"t522bef66-90230f:2"},"at":1789387507209,"by":"collab-2"}
+{"seq":3,"op":{"t":"ins","site":"t522bef66-90230f","ctr":3,"lam":3,"after":"t522bef66-90230f:2","ch":"e","id":"t522bef66-90230f:3"},"at":1789387507209,"by":"collab-2"}
+{"seq":4,"op":{"t":"ins","site":"t522bef66-90230f","ctr":4,"lam":4,"after":"t522bef66-90230f:3","ch":"a","id":"t522bef66-90230f:4"},"at":1789387507209,"by":"collab-2"}
+{"seq":5,"op":{"t":"ins","site":"t522bef66-90230f","ctr":5,"lam":5,"after":"t522bef66-90230f:4","ch":"n","id":"t522bef66-90230f:5"},"at":1789387507209,"by":"collab-2"}
+{"seq":6,"op":{"t":"ins","site":"t522bef66-90230f","ctr":6,"lam":6,"after":"t522bef66-90230f:5","ch":"!","id":"t522bef66-90230f:6"},"at":1789387508210,"by":"collab-2"}

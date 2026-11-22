@@ -1,0 +1,86 @@
+# Five independent containers on a private network — each a separate process
+# with its own identity, its own port and its own state.
+#
+#   cp ../.env.example .env   # then set real secrets
+#   docker compose up --build
+#   docker compose up --scale collab=3 --build
+name: coedit-ds
+
+x-common: &common
+  build:
+    context: ..
+    dockerfile: deploy/Dockerfile
+  restart: unless-stopped
+  environment: &env
+    COEDIT_JWT_SECRET: ${COEDIT_JWT_SECRET:?set COEDIT_JWT_SECRET in deploy/.env}
+    COEDIT_INTERNAL_KEY: ${COEDIT_INTERNAL_KEY:?set COEDIT_INTERNAL_KEY in deploy/.env}
+    DIRECTORY_URL: http://directory:7000
+    STORAGE_URL: http://storage:7100
+    LOG_FORMAT: json
+    LOG_LEVEL: ${LOG_LEVEL:-info}
+  networks: [coedit]
+
+services:
+  directory:
+    <<: *common
+    container_name: coedit-directory
+    command: node src/directory/server.js
+    environment:
+      <<: *env
+      NODE_ID: directory-1
+    volumes: [directory-data:/app/data]
+    healthcheck:
+      test: ["CMD","curl","-fsS","http://localhost:7000/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  storage:
+    <<: *common
+    container_name: coedit-storage
+    command: node src/storage/server.js
+    environment:
+      <<: *env
+      NODE_ID: storage-1
+    volumes: [storage-data:/app/data]
+    healthcheck:
+      test: ["CMD","curl","-fsS","http://localhost:7100/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Scale freely:  docker compose up --scale collab=3
+  # Each replica derives a unique REPLICA_ID from its container hostname, and
+  # advertises that hostname so peers and the gateway can dial it directly.
+  collab:
+    <<: *common
+    command: >
+      sh -c 'export REPLICA_ID="collab-$${HOSTNAME}";
+             export COLLAB_PORT=7201;
+             export COLLAB_WS_URL="ws://$${HOSTNAME}:7201";
+             exec node src/collab/server.js'
+    depends_on:
+      directory: {condition: service_healthy}
+      storage: {condition: service_healthy}
+    deploy:
+      replicas: 2
+
+  gateway:
+    <<: *common
+    container_name: coedit-gateway
+    command: node src/gateway/server.js
+    environment:
+      <<: *env
+      NODE_ID: gateway-1
+      GATEWAY_PORT: 8080
+    ports: ["8080:8080"]
+    depends_on:
+      directory: {condition: service_healthy}
+
+networks:
+  coedit:
+    driver: bridge
+
+volumes:
+  directory-data:
+  storage-data:

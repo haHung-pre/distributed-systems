@@ -1,0 +1,434 @@
+{"ts":"2026-09-14T12:04:15.766Z","node":"directory-1","level":"info","event":"listening","port":7000,"role":"directory"}
+{"ts":"2026-09-14T12:04:16.320Z","node":"directory-1","level":"info","event":"replica_registered","replica":"collab-1","wsUrl":"ws://127.0.0.1:7201"}
+{"ts":"2026-09-14T12:04:16.584Z","node":"directory-1","level":"info","event":"replica_registered","replica":"collab-2","wsUrl":"ws://127.0.0.1:7202"}
+{"ts":"2026-09-14T12:04:47.368Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-0032da9e344d","username":"t75d81506"}
+{"ts":"2026-09-14T12:04:47.397Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-0032da9e344d"}
+{"ts":"2026-09-14T12:04:47.399Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-117624696bf3","ownerId":"u-0032da9e344d","title":"F01 doc"}
+{"ts":"2026-09-14T12:04:47.401Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-117624696bf3","userId":"u-0032da9e344d","clientId":"t75d81506-38aba1","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:47.427Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-a86e05a75425","username":"t80c54fba"}
+{"ts":"2026-09-14T12:04:47.460Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-a86e05a75425"}
+{"ts":"2026-09-14T12:04:47.492Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-996776ebdca9","username":"t6dd86e6b"}
+{"ts":"2026-09-14T12:04:47.521Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-996776ebdca9"}
+{"ts":"2026-09-14T12:04:47.543Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-6d74f952ba81","username":"t0f4b7529"}
+{"ts":"2026-09-14T12:04:47.569Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-6d74f952ba81"}
+{"ts":"2026-09-14T12:04:47.570Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-50f4da7f5d39","ownerId":"u-a86e05a75425","title":"F02 three clients"}
+{"ts":"2026-09-14T12:04:47.571Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-50f4da7f5d39","grantee":"u-996776ebdca9","role":"editor"}
+{"ts":"2026-09-14T12:04:47.572Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-50f4da7f5d39","grantee":"u-6d74f952ba81","role":"editor"}
+{"ts":"2026-09-14T12:04:47.574Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-50f4da7f5d39","userId":"u-a86e05a75425","clientId":"t80c54fba-40ccf0","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:47.585Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-50f4da7f5d39","userId":"u-996776ebdca9","clientId":"t6dd86e6b-f5c3b9","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:47.588Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-50f4da7f5d39","userId":"u-6d74f952ba81","clientId":"t0f4b7529-448efb","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:48.016Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-a60c3b881585","username":"tbd9a1ea7"}
+{"ts":"2026-09-14T12:04:48.040Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-a60c3b881585"}
+{"ts":"2026-09-14T12:04:48.065Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-d5aa0de0e768","username":"t62715c59"}
+{"ts":"2026-09-14T12:04:48.088Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-d5aa0de0e768"}
+{"ts":"2026-09-14T12:04:48.111Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-ce78850f0064","username":"t43fa676a"}
+{"ts":"2026-09-14T12:04:48.134Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-ce78850f0064"}
+{"ts":"2026-09-14T12:04:48.135Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-b5bc2a9648ab","ownerId":"u-a60c3b881585","title":"F03 broadcast"}
+{"ts":"2026-09-14T12:04:48.136Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-b5bc2a9648ab","grantee":"u-d5aa0de0e768","role":"editor"}
+{"ts":"2026-09-14T12:04:48.137Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-b5bc2a9648ab","grantee":"u-ce78850f0064","role":"editor"}
+{"ts":"2026-09-14T12:04:48.138Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b5bc2a9648ab","userId":"u-a60c3b881585","clientId":"tbd9a1ea7-8448f0","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:48.145Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b5bc2a9648ab","userId":"u-d5aa0de0e768","clientId":"t62715c59-fa6e29","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:48.148Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b5bc2a9648ab","userId":"u-ce78850f0064","clientId":"t43fa676a-bd1f2d","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:48.178Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-d77ccf78acf8","username":"t17212956"}
+{"ts":"2026-09-14T12:04:48.201Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-d77ccf78acf8"}
+{"ts":"2026-09-14T12:04:48.224Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-336706f288eb","username":"t88812f4d"}
+{"ts":"2026-09-14T12:04:48.247Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-336706f288eb"}
+{"ts":"2026-09-14T12:04:48.248Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-3cb051d6c839","ownerId":"u-d77ccf78acf8","title":"F04 ins/del"}
+{"ts":"2026-09-14T12:04:48.249Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-3cb051d6c839","grantee":"u-336706f288eb","role":"editor"}
+{"ts":"2026-09-14T12:04:48.250Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-3cb051d6c839","userId":"u-d77ccf78acf8","clientId":"t17212956-d695f7","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:48.255Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-3cb051d6c839","userId":"u-336706f288eb","clientId":"t88812f4d-31e27e","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:48.283Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-8f34e3b7a235","username":"t86d33c20"}
+{"ts":"2026-09-14T12:04:48.309Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-8f34e3b7a235"}
+{"ts":"2026-09-14T12:04:48.335Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-8d3a7d467581","username":"t297bcf1b"}
+{"ts":"2026-09-14T12:04:48.365Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-8d3a7d467581"}
+{"ts":"2026-09-14T12:04:48.390Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-53a7066e0348","username":"t11d0761a"}
+{"ts":"2026-09-14T12:04:48.412Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-53a7066e0348"}
+{"ts":"2026-09-14T12:04:48.413Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-7089062775af","ownerId":"u-8f34e3b7a235","title":"F05 late join"}
+{"ts":"2026-09-14T12:04:48.414Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-7089062775af","grantee":"u-8d3a7d467581","role":"editor"}
+{"ts":"2026-09-14T12:04:48.415Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-7089062775af","grantee":"u-53a7066e0348","role":"editor"}
+{"ts":"2026-09-14T12:04:48.416Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-7089062775af","userId":"u-8f34e3b7a235","clientId":"t86d33c20-5f4f41","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:48.420Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-7089062775af","userId":"u-8d3a7d467581","clientId":"t297bcf1b-a7a377","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:48.725Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-7089062775af","userId":"u-53a7066e0348","clientId":"t11d0761a-90d717","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:48.757Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-0df5c25ee62f","username":"td45f43e9"}
+{"ts":"2026-09-14T12:04:48.782Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-0df5c25ee62f"}
+{"ts":"2026-09-14T12:04:48.784Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-1d08d0c5deb1","ownerId":"u-0df5c25ee62f","title":"F06 op shape"}
+{"ts":"2026-09-14T12:04:48.788Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-1d08d0c5deb1","userId":"u-0df5c25ee62f","clientId":"td45f43e9-22c8e0","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:49.027Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-4fe8c98fde87","username":"tec43450c"}
+{"ts":"2026-09-14T12:04:49.066Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-4fe8c98fde87"}
+{"ts":"2026-09-14T12:04:49.067Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-641a23c22331","ownerId":"u-4fe8c98fde87","title":"F07 durability"}
+{"ts":"2026-09-14T12:04:49.068Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-641a23c22331","userId":"u-4fe8c98fde87","clientId":"tec43450c-a0d4e8","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:50.006Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-d78b262a6dc3","username":"t7d59a66c"}
+{"ts":"2026-09-14T12:04:50.032Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-d78b262a6dc3"}
+{"ts":"2026-09-14T12:04:50.060Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-ccf90b1d0b5b","username":"t691835d8"}
+{"ts":"2026-09-14T12:04:50.086Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-ccf90b1d0b5b"}
+{"ts":"2026-09-14T12:04:50.087Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-236f64ee2168","ownerId":"u-d78b262a6dc3","title":"F08 sharing"}
+{"ts":"2026-09-14T12:04:50.088Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-236f64ee2168","grantee":"u-ccf90b1d0b5b","role":"viewer"}
+{"ts":"2026-09-14T12:04:50.116Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-0e397acecc25","username":"t1731f9f5"}
+{"ts":"2026-09-14T12:04:50.142Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-0e397acecc25"}
+{"ts":"2026-09-14T12:04:50.166Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-0f06f3dbd3ea","username":"t9b08f691"}
+{"ts":"2026-09-14T12:04:50.190Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-0f06f3dbd3ea"}
+{"ts":"2026-09-14T12:04:50.232Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-cf269a0fede8","username":"tc657efd6"}
+{"ts":"2026-09-14T12:04:50.269Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-cf269a0fede8"}
+{"ts":"2026-09-14T12:04:50.271Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-8d89627f48c2","ownerId":"u-0e397acecc25","title":"C01 same position"}
+{"ts":"2026-09-14T12:04:50.272Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-8d89627f48c2","grantee":"u-0f06f3dbd3ea","role":"editor"}
+{"ts":"2026-09-14T12:04:50.273Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-8d89627f48c2","grantee":"u-cf269a0fede8","role":"editor"}
+{"ts":"2026-09-14T12:04:50.274Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-8d89627f48c2","userId":"u-0e397acecc25","clientId":"t1731f9f5-2b9940","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:50.283Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-8d89627f48c2","userId":"u-0f06f3dbd3ea","clientId":"t9b08f691-50be74","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:50.290Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-8d89627f48c2","userId":"u-cf269a0fede8","clientId":"tc657efd6-75bcf5","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:50.462Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-2ff966696936","username":"t00be1220"}
+{"ts":"2026-09-14T12:04:50.500Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-2ff966696936"}
+{"ts":"2026-09-14T12:04:50.530Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-0d8e52b348ed","username":"ta7127cb1"}
+{"ts":"2026-09-14T12:04:50.557Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-0d8e52b348ed"}
+{"ts":"2026-09-14T12:04:50.558Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-055629f14ba9","ownerId":"u-2ff966696936","title":"C02 insert vs delete"}
+{"ts":"2026-09-14T12:04:50.559Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-055629f14ba9","grantee":"u-0d8e52b348ed","role":"editor"}
+{"ts":"2026-09-14T12:04:50.560Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-055629f14ba9","userId":"u-2ff966696936","clientId":"t00be1220-86f7e9","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:50.564Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-055629f14ba9","userId":"u-0d8e52b348ed","clientId":"ta7127cb1-461e8a","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:50.678Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-c81ffc9ac8ea","username":"t1338d17f"}
+{"ts":"2026-09-14T12:04:50.707Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-c81ffc9ac8ea"}
+{"ts":"2026-09-14T12:04:50.734Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-0c334af2bcf9","username":"tb7b9f212"}
+{"ts":"2026-09-14T12:04:50.762Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-0c334af2bcf9"}
+{"ts":"2026-09-14T12:04:50.763Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-19f0f390ba2a","ownerId":"u-c81ffc9ac8ea","title":"R01 offline"}
+{"ts":"2026-09-14T12:04:50.764Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-19f0f390ba2a","grantee":"u-0c334af2bcf9","role":"editor"}
+{"ts":"2026-09-14T12:04:50.765Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-19f0f390ba2a","userId":"u-c81ffc9ac8ea","clientId":"t1338d17f-e5612b","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:50.769Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-19f0f390ba2a","userId":"u-0c334af2bcf9","clientId":"tb7b9f212-294ff8","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:51.413Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-19f0f390ba2a","userId":"u-c81ffc9ac8ea","clientId":"t1338d17f-e5612b","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:51.480Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-22e523a52dd1","username":"t995a2850"}
+{"ts":"2026-09-14T12:04:51.507Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-22e523a52dd1"}
+{"ts":"2026-09-14T12:04:51.530Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-9326ecc2f1b1","username":"ta82a6387"}
+{"ts":"2026-09-14T12:04:51.552Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-9326ecc2f1b1"}
+{"ts":"2026-09-14T12:04:51.553Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-c53c49573d02","ownerId":"u-22e523a52dd1","title":"R02 failover"}
+{"ts":"2026-09-14T12:04:51.554Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-c53c49573d02","grantee":"u-9326ecc2f1b1","role":"editor"}
+{"ts":"2026-09-14T12:04:51.555Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-c53c49573d02","userId":"u-22e523a52dd1","clientId":"t995a2850-766402","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:51.559Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-c53c49573d02","userId":"u-9326ecc2f1b1","clientId":"ta82a6387-5e6517","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:52.490Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-c53c49573d02","userId":"u-22e523a52dd1","clientId":"t995a2850-766402","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:54.058Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-b9bffb42253a","username":"t5619caf8"}
+{"ts":"2026-09-14T12:04:54.081Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-b9bffb42253a"}
+{"ts":"2026-09-14T12:04:54.104Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-115c55e1fd06","username":"t008ee941"}
+{"ts":"2026-09-14T12:04:54.126Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-115c55e1fd06"}
+{"ts":"2026-09-14T12:04:54.127Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-c7aca1647c0f","ownerId":"u-b9bffb42253a","title":"R03 dup ops"}
+{"ts":"2026-09-14T12:04:54.128Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-c7aca1647c0f","grantee":"u-115c55e1fd06","role":"editor"}
+{"ts":"2026-09-14T12:04:54.129Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-c7aca1647c0f","userId":"u-b9bffb42253a","clientId":"t5619caf8-71561d","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:54.133Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-c7aca1647c0f","userId":"u-115c55e1fd06","clientId":"t008ee941-1a91c8","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:04:54.899Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-f29dc8c29dfb","username":"t5a55d157"}
+{"ts":"2026-09-14T12:04:54.925Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-f29dc8c29dfb"}
+{"ts":"2026-09-14T12:04:54.948Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-b321d46bdcff","username":"t3cf2803b"}
+{"ts":"2026-09-14T12:04:54.972Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-b321d46bdcff"}
+{"ts":"2026-09-14T12:04:54.973Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-61e0c09abeac","ownerId":"u-f29dc8c29dfb","title":"R04 lossy link"}
+{"ts":"2026-09-14T12:04:54.974Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-61e0c09abeac","grantee":"u-b321d46bdcff","role":"editor"}
+{"ts":"2026-09-14T12:04:54.975Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-61e0c09abeac","userId":"u-f29dc8c29dfb","clientId":"t5a55d157-c794e5","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:54.980Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-61e0c09abeac","userId":"u-b321d46bdcff","clientId":"t3cf2803b-ad9e5e","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:57.020Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-7033c69029d4","username":"tbf96d7f4"}
+{"ts":"2026-09-14T12:04:57.042Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-7033c69029d4"}
+{"ts":"2026-09-14T12:04:57.065Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-0a64f052b522","username":"t6e3ad86a"}
+{"ts":"2026-09-14T12:04:57.087Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-0a64f052b522"}
+{"ts":"2026-09-14T12:04:57.089Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-b54b1afbbdd3","ownerId":"u-7033c69029d4","title":"R05 storage outage"}
+{"ts":"2026-09-14T12:04:57.089Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-b54b1afbbdd3","grantee":"u-0a64f052b522","role":"editor"}
+{"ts":"2026-09-14T12:04:57.090Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b54b1afbbdd3","userId":"u-7033c69029d4","clientId":"tbf96d7f4-48b668","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:04:57.094Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b54b1afbbdd3","userId":"u-0a64f052b522","clientId":"t6e3ad86a-592736","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:05:01.930Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-85efc911a348","username":"t49356e15"}
+{"ts":"2026-09-14T12:05:01.953Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-85efc911a348"}
+{"ts":"2026-09-14T12:05:01.977Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-bb1e3ade29dc","username":"t8d6a973f"}
+{"ts":"2026-09-14T12:05:02.001Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-bb1e3ade29dc"}
+{"ts":"2026-09-14T12:05:02.003Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-a655b922de0a","ownerId":"u-85efc911a348","title":"R06 snapshot delta"}
+{"ts":"2026-09-14T12:05:02.004Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-a655b922de0a","grantee":"u-bb1e3ade29dc","role":"editor"}
+{"ts":"2026-09-14T12:05:02.004Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a655b922de0a","userId":"u-85efc911a348","clientId":"t49356e15-a62f8f","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:02.009Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a655b922de0a","userId":"u-bb1e3ade29dc","clientId":"t8d6a973f-fdbe56","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:02.808Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a655b922de0a","userId":"u-85efc911a348","clientId":"t49356e15-a62f8f","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:03.301Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a655b922de0a","userId":"u-85efc911a348","clientId":"t49356e15-a62f8f","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:05.671Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a655b922de0a","userId":"u-bb1e3ade29dc","clientId":"t8d6a973f-fdbe56","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:05.699Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-8655466bae91","username":"t183f64b9"}
+{"ts":"2026-09-14T12:05:05.722Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-8655466bae91"}
+{"ts":"2026-09-14T12:05:05.746Z","node":"directory-1","level":"warn","event":"login_failed","username":"t183f64b9"}
+{"ts":"2026-09-14T12:05:05.769Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-52254ce9ea38","username":"t0abf1cf3"}
+{"ts":"2026-09-14T12:05:05.791Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-52254ce9ea38"}
+{"ts":"2026-09-14T12:05:05.814Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-e50f45181ec8","username":"t023f0171"}
+{"ts":"2026-09-14T12:05:05.837Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-e50f45181ec8"}
+{"ts":"2026-09-14T12:05:05.859Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-812e6925e12c","username":"t10f6a06a"}
+{"ts":"2026-09-14T12:05:05.881Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-812e6925e12c"}
+{"ts":"2026-09-14T12:05:05.882Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-b8c0fc7bf52c","ownerId":"u-52254ce9ea38","title":"S02 acl"}
+{"ts":"2026-09-14T12:05:05.883Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-b8c0fc7bf52c","grantee":"u-e50f45181ec8","role":"viewer"}
+{"ts":"2026-09-14T12:05:05.885Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b8c0fc7bf52c","userId":"u-52254ce9ea38","clientId":"t0abf1cf3-75d30f","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:05:06.190Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b8c0fc7bf52c","userId":"u-e50f45181ec8","clientId":"t023f0171-cf6912","role":"viewer","primary":"collab-1"}
+{"ts":"2026-09-14T12:05:07.122Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-72d05ca22399","username":"t522bef66"}
+{"ts":"2026-09-14T12:05:07.147Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-72d05ca22399"}
+{"ts":"2026-09-14T12:05:07.172Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-420ea2feb830","username":"t004b28b6"}
+{"ts":"2026-09-14T12:05:07.197Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-420ea2feb830"}
+{"ts":"2026-09-14T12:05:07.198Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-d4942070dd59","ownerId":"u-72d05ca22399","title":"S03 bad input"}
+{"ts":"2026-09-14T12:05:07.199Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-d4942070dd59","grantee":"u-420ea2feb830","role":"editor"}
+{"ts":"2026-09-14T12:05:07.199Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d4942070dd59","userId":"u-72d05ca22399","clientId":"t522bef66-90230f","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:07.205Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d4942070dd59","userId":"u-420ea2feb830","clientId":"t004b28b6-ee5924","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:08.177Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-4be9e82495d8","username":"tec1dc1fe"}
+{"ts":"2026-09-14T12:05:08.215Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-4be9e82495d8"}
+{"ts":"2026-09-14T12:05:08.248Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-ec798e67f4a7","username":"t1bf17a9e"}
+{"ts":"2026-09-14T12:05:08.279Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-ec798e67f4a7"}
+{"ts":"2026-09-14T12:05:08.280Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-dfea6314ccce","ownerId":"u-4be9e82495d8","title":"S04 live revocation"}
+{"ts":"2026-09-14T12:05:08.281Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-dfea6314ccce","grantee":"u-ec798e67f4a7","role":"editor"}
+{"ts":"2026-09-14T12:05:08.282Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-dfea6314ccce","userId":"u-4be9e82495d8","clientId":"tec1dc1fe-cf4784","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:08.286Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-dfea6314ccce","userId":"u-ec798e67f4a7","clientId":"t1bf17a9e-9fbc11","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:08.329Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-dfea6314ccce","grantee":"u-ec798e67f4a7","role":"viewer"}
+{"ts":"2026-09-14T12:05:11.832Z","node":"directory-1","level":"info","event":"role_changed_since_token","docId":"doc-dfea6314ccce","userId":"u-ec798e67f4a7","was":"editor","now":"viewer"}
+{"ts":"2026-09-14T12:05:13.937Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-94e4f6d49311","username":"pfd869643"}
+{"ts":"2026-09-14T12:05:13.960Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-94e4f6d49311"}
+{"ts":"2026-09-14T12:05:13.983Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-374429f62ad5","username":"p6d52a753"}
+{"ts":"2026-09-14T12:05:14.006Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-374429f62ad5"}
+{"ts":"2026-09-14T12:05:14.029Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-56f9d674ed65","username":"pe7e78213"}
+{"ts":"2026-09-14T12:05:14.052Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-56f9d674ed65"}
+{"ts":"2026-09-14T12:05:14.074Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-1ed58a100729","username":"p5311f7f3"}
+{"ts":"2026-09-14T12:05:14.096Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-1ed58a100729"}
+{"ts":"2026-09-14T12:05:14.119Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-39008400abe5","username":"p3c9f9ce2"}
+{"ts":"2026-09-14T12:05:14.142Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-39008400abe5"}
+{"ts":"2026-09-14T12:05:14.164Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-8f421927ef60","username":"p53992920"}
+{"ts":"2026-09-14T12:05:14.188Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-8f421927ef60"}
+{"ts":"2026-09-14T12:05:14.189Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-f7ad7bc74068","ownerId":"u-94e4f6d49311","title":"P01 perf"}
+{"ts":"2026-09-14T12:05:14.190Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-f7ad7bc74068","grantee":"u-374429f62ad5","role":"editor"}
+{"ts":"2026-09-14T12:05:14.191Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-f7ad7bc74068","grantee":"u-56f9d674ed65","role":"editor"}
+{"ts":"2026-09-14T12:05:14.192Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-f7ad7bc74068","grantee":"u-1ed58a100729","role":"editor"}
+{"ts":"2026-09-14T12:05:14.192Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-f7ad7bc74068","grantee":"u-39008400abe5","role":"editor"}
+{"ts":"2026-09-14T12:05:14.193Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-f7ad7bc74068","grantee":"u-8f421927ef60","role":"editor"}
+{"ts":"2026-09-14T12:05:14.194Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f7ad7bc74068","userId":"u-94e4f6d49311","clientId":"pfd869643-087e19","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:14.199Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f7ad7bc74068","userId":"u-374429f62ad5","clientId":"p6d52a753-91510a","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:14.203Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f7ad7bc74068","userId":"u-56f9d674ed65","clientId":"pe7e78213-1433f8","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:14.205Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f7ad7bc74068","userId":"u-1ed58a100729","clientId":"p5311f7f3-4f6bfd","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:14.208Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f7ad7bc74068","userId":"u-39008400abe5","clientId":"p3c9f9ce2-ff8f6f","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:14.211Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f7ad7bc74068","userId":"u-8f421927ef60","clientId":"p53992920-de0d5c","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:45.565Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-48082831065f","username":"t800aa5cc"}
+{"ts":"2026-09-14T12:05:45.591Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-48082831065f"}
+{"ts":"2026-09-14T12:05:45.614Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-684a8b3ef4b1","username":"ta6b77fbe"}
+{"ts":"2026-09-14T12:05:45.636Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-684a8b3ef4b1"}
+{"ts":"2026-09-14T12:05:45.638Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-e980027ac68f","ownerId":"u-48082831065f","title":"attack acl"}
+{"ts":"2026-09-14T12:05:45.640Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-e980027ac68f","grantee":"u-684a8b3ef4b1","role":"editor"}
+{"ts":"2026-09-14T12:05:45.642Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-e980027ac68f","userId":"u-48082831065f","clientId":"t800aa5cc-365b58","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:05:45.649Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-e980027ac68f","userId":"u-684a8b3ef4b1","clientId":"ta6b77fbe-57f35f","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:05:46.353Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-e980027ac68f","grantee":"u-684a8b3ef4b1","role":"viewer"}
+{"ts":"2026-09-14T12:05:49.855Z","node":"directory-1","level":"info","event":"role_changed_since_token","docId":"doc-e980027ac68f","userId":"u-684a8b3ef4b1","was":"editor","now":"viewer"}
+{"ts":"2026-09-14T12:05:51.879Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-1cb062c8c38e","username":"td638214a"}
+{"ts":"2026-09-14T12:05:51.903Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-1cb062c8c38e"}
+{"ts":"2026-09-14T12:05:51.927Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-3dc704809baf","username":"t87f09784"}
+{"ts":"2026-09-14T12:05:51.955Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-3dc704809baf"}
+{"ts":"2026-09-14T12:05:51.956Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-0451d5ce053b","ownerId":"u-1cb062c8c38e","title":"attack snapshot"}
+{"ts":"2026-09-14T12:05:51.957Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-0451d5ce053b","grantee":"u-3dc704809baf","role":"editor"}
+{"ts":"2026-09-14T12:05:51.958Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0451d5ce053b","userId":"u-1cb062c8c38e","clientId":"td638214a-65abc7","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:51.962Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0451d5ce053b","userId":"u-3dc704809baf","clientId":"t87f09784-873593","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:53.422Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0451d5ce053b","userId":"u-1cb062c8c38e","clientId":"td638214a-65abc7","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:53.907Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0451d5ce053b","userId":"u-1cb062c8c38e","clientId":"td638214a-65abc7","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:05:56.403Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0451d5ce053b","userId":"u-3dc704809baf","clientId":"t87f09784-873593","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:08:37.681Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-763ee3750bf2","username":"aliceda3947"}
+{"ts":"2026-09-14T12:08:37.704Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-763ee3750bf2"}
+{"ts":"2026-09-14T12:08:37.727Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-0247340fcfeb","username":"bob014020"}
+{"ts":"2026-09-14T12:08:37.749Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-0247340fcfeb"}
+{"ts":"2026-09-14T12:08:37.773Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-49007808a8e8","username":"carol6eed72"}
+{"ts":"2026-09-14T12:08:37.795Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-49007808a8e8"}
+{"ts":"2026-09-14T12:08:37.797Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-9fe31e920504","ownerId":"u-763ee3750bf2","title":"Defence demo document"}
+{"ts":"2026-09-14T12:08:37.798Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-9fe31e920504","grantee":"u-0247340fcfeb","role":"editor"}
+{"ts":"2026-09-14T12:08:37.799Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-9fe31e920504","grantee":"u-49007808a8e8","role":"editor"}
+{"ts":"2026-09-14T12:08:37.800Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9fe31e920504","userId":"u-763ee3750bf2","clientId":"aliceda3947-a15ecb","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:37.807Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9fe31e920504","userId":"u-0247340fcfeb","clientId":"bob014020-aba52f","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:37.812Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9fe31e920504","userId":"u-49007808a8e8","clientId":"carol6eed72-49559f","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:41.629Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9fe31e920504","userId":"u-49007808a8e8","clientId":"carol6eed72-49559f","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:42.767Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9fe31e920504","userId":"u-763ee3750bf2","clientId":"aliceda3947-a15ecb","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:42.782Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9fe31e920504","userId":"u-49007808a8e8","clientId":"carol6eed72-49559f","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:51.818Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-45f8a314477d","username":"alice3a2aaf"}
+{"ts":"2026-09-14T12:08:51.845Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-45f8a314477d"}
+{"ts":"2026-09-14T12:08:51.873Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-4e4c60546c3b","username":"bob739903"}
+{"ts":"2026-09-14T12:08:51.900Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-4e4c60546c3b"}
+{"ts":"2026-09-14T12:08:51.926Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-82e320b0112b","username":"carolbc9a7a"}
+{"ts":"2026-09-14T12:08:51.952Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-82e320b0112b"}
+{"ts":"2026-09-14T12:08:51.954Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-a22967322958","ownerId":"u-45f8a314477d","title":"Defence demo document"}
+{"ts":"2026-09-14T12:08:51.956Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-a22967322958","grantee":"u-4e4c60546c3b","role":"editor"}
+{"ts":"2026-09-14T12:08:51.958Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-a22967322958","grantee":"u-82e320b0112b","role":"editor"}
+{"ts":"2026-09-14T12:08:51.959Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a22967322958","userId":"u-45f8a314477d","clientId":"alice3a2aaf-bd5fb1","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:51.970Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a22967322958","userId":"u-4e4c60546c3b","clientId":"bob739903-271c0c","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:51.978Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a22967322958","userId":"u-82e320b0112b","clientId":"carolbc9a7a-c55a6c","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:55.796Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a22967322958","userId":"u-82e320b0112b","clientId":"carolbc9a7a-c55a6c","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:56.858Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a22967322958","userId":"u-82e320b0112b","clientId":"carolbc9a7a-c55a6c","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:08:56.949Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-a22967322958","userId":"u-45f8a314477d","clientId":"alice3a2aaf-bd5fb1","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:14.042Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-47ff6907eb73","username":"tf45e2e91"}
+{"ts":"2026-09-14T12:09:14.068Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-47ff6907eb73"}
+{"ts":"2026-09-14T12:09:14.070Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-3ad57e917e97","ownerId":"u-47ff6907eb73","title":"F01 doc"}
+{"ts":"2026-09-14T12:09:14.071Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-3ad57e917e97","userId":"u-47ff6907eb73","clientId":"tf45e2e91-d195c0","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.094Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-e5d2bd302d08","username":"t1ed69b64"}
+{"ts":"2026-09-14T12:09:14.121Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-e5d2bd302d08"}
+{"ts":"2026-09-14T12:09:14.148Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-f422b6358a6b","username":"t2752f8ab"}
+{"ts":"2026-09-14T12:09:14.173Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-f422b6358a6b"}
+{"ts":"2026-09-14T12:09:14.199Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-120d385a35ce","username":"ta9004d08"}
+{"ts":"2026-09-14T12:09:14.225Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-120d385a35ce"}
+{"ts":"2026-09-14T12:09:14.227Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-695c30b76e9b","ownerId":"u-e5d2bd302d08","title":"F02 three clients"}
+{"ts":"2026-09-14T12:09:14.228Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-695c30b76e9b","grantee":"u-f422b6358a6b","role":"editor"}
+{"ts":"2026-09-14T12:09:14.229Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-695c30b76e9b","grantee":"u-120d385a35ce","role":"editor"}
+{"ts":"2026-09-14T12:09:14.231Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-695c30b76e9b","userId":"u-e5d2bd302d08","clientId":"t1ed69b64-ab3fc7","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.243Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-695c30b76e9b","userId":"u-f422b6358a6b","clientId":"t2752f8ab-c15ae6","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.247Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-695c30b76e9b","userId":"u-120d385a35ce","clientId":"ta9004d08-cc27b9","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.675Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-ea7388529040","username":"td01b7c12"}
+{"ts":"2026-09-14T12:09:14.697Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-ea7388529040"}
+{"ts":"2026-09-14T12:09:14.719Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-93c3124c2c9f","username":"te9fc6eef"}
+{"ts":"2026-09-14T12:09:14.742Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-93c3124c2c9f"}
+{"ts":"2026-09-14T12:09:14.765Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-836fc983b1c4","username":"t06212ace"}
+{"ts":"2026-09-14T12:09:14.787Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-836fc983b1c4"}
+{"ts":"2026-09-14T12:09:14.788Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-d3bea90f8924","ownerId":"u-ea7388529040","title":"F03 broadcast"}
+{"ts":"2026-09-14T12:09:14.789Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-d3bea90f8924","grantee":"u-93c3124c2c9f","role":"editor"}
+{"ts":"2026-09-14T12:09:14.790Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-d3bea90f8924","grantee":"u-836fc983b1c4","role":"editor"}
+{"ts":"2026-09-14T12:09:14.791Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d3bea90f8924","userId":"u-ea7388529040","clientId":"td01b7c12-944daf","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.795Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d3bea90f8924","userId":"u-93c3124c2c9f","clientId":"te9fc6eef-b8cc3a","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.798Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d3bea90f8924","userId":"u-836fc983b1c4","clientId":"t06212ace-14d220","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.826Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-f8ab01ffff7e","username":"td23b24b4"}
+{"ts":"2026-09-14T12:09:14.848Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-f8ab01ffff7e"}
+{"ts":"2026-09-14T12:09:14.871Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-31fdb2a27cea","username":"t2c36d156"}
+{"ts":"2026-09-14T12:09:14.894Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-31fdb2a27cea"}
+{"ts":"2026-09-14T12:09:14.895Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-8d1dad68da06","ownerId":"u-f8ab01ffff7e","title":"F04 ins/del"}
+{"ts":"2026-09-14T12:09:14.896Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-8d1dad68da06","grantee":"u-31fdb2a27cea","role":"editor"}
+{"ts":"2026-09-14T12:09:14.897Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-8d1dad68da06","userId":"u-f8ab01ffff7e","clientId":"td23b24b4-8ac14c","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.901Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-8d1dad68da06","userId":"u-31fdb2a27cea","clientId":"t2c36d156-e186de","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:14.928Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-2c4eeaabc293","username":"t20e0926a"}
+{"ts":"2026-09-14T12:09:14.950Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-2c4eeaabc293"}
+{"ts":"2026-09-14T12:09:14.975Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-35f05518fd01","username":"t61b4729a"}
+{"ts":"2026-09-14T12:09:14.999Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-35f05518fd01"}
+{"ts":"2026-09-14T12:09:15.024Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-9235d804dcf6","username":"t9e2d57cd"}
+{"ts":"2026-09-14T12:09:15.046Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-9235d804dcf6"}
+{"ts":"2026-09-14T12:09:15.047Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-44f4b33bfa8a","ownerId":"u-2c4eeaabc293","title":"F05 late join"}
+{"ts":"2026-09-14T12:09:15.047Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-44f4b33bfa8a","grantee":"u-35f05518fd01","role":"editor"}
+{"ts":"2026-09-14T12:09:15.048Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-44f4b33bfa8a","grantee":"u-9235d804dcf6","role":"editor"}
+{"ts":"2026-09-14T12:09:15.049Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-44f4b33bfa8a","userId":"u-2c4eeaabc293","clientId":"t20e0926a-edcd3c","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:15.053Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-44f4b33bfa8a","userId":"u-35f05518fd01","clientId":"t61b4729a-9d7763","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:15.357Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-44f4b33bfa8a","userId":"u-9235d804dcf6","clientId":"t9e2d57cd-2c6926","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:15.384Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-7a0c2e2858dc","username":"tdb11a853"}
+{"ts":"2026-09-14T12:09:15.407Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-7a0c2e2858dc"}
+{"ts":"2026-09-14T12:09:15.408Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-355b3e4959f6","ownerId":"u-7a0c2e2858dc","title":"F06 op shape"}
+{"ts":"2026-09-14T12:09:15.408Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-355b3e4959f6","userId":"u-7a0c2e2858dc","clientId":"tdb11a853-4c0733","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:15.642Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-2e31afc086a1","username":"t493bf5d6"}
+{"ts":"2026-09-14T12:09:15.668Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-2e31afc086a1"}
+{"ts":"2026-09-14T12:09:15.669Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-3fcea6bf18ab","ownerId":"u-2e31afc086a1","title":"F07 durability"}
+{"ts":"2026-09-14T12:09:15.670Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-3fcea6bf18ab","userId":"u-2e31afc086a1","clientId":"t493bf5d6-b2cd75","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:16.599Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-ce2db38a2d1f","username":"t044ebc00"}
+{"ts":"2026-09-14T12:09:16.622Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-ce2db38a2d1f"}
+{"ts":"2026-09-14T12:09:16.645Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-b3c7aee4c4b9","username":"t1beb0385"}
+{"ts":"2026-09-14T12:09:16.669Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-b3c7aee4c4b9"}
+{"ts":"2026-09-14T12:09:16.670Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-adb878baf43a","ownerId":"u-ce2db38a2d1f","title":"F08 sharing"}
+{"ts":"2026-09-14T12:09:16.671Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-adb878baf43a","grantee":"u-b3c7aee4c4b9","role":"viewer"}
+{"ts":"2026-09-14T12:09:16.698Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-ba86ab5139a9","username":"t106e6c11"}
+{"ts":"2026-09-14T12:09:16.724Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-ba86ab5139a9"}
+{"ts":"2026-09-14T12:09:16.748Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-22a2ee66cc78","username":"t2ecd18c8"}
+{"ts":"2026-09-14T12:09:16.770Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-22a2ee66cc78"}
+{"ts":"2026-09-14T12:09:16.796Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-99c63d92ed33","username":"t3a3cda3f"}
+{"ts":"2026-09-14T12:09:16.822Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-99c63d92ed33"}
+{"ts":"2026-09-14T12:09:16.823Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-b3f0381ccee0","ownerId":"u-ba86ab5139a9","title":"C01 same position"}
+{"ts":"2026-09-14T12:09:16.824Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-b3f0381ccee0","grantee":"u-22a2ee66cc78","role":"editor"}
+{"ts":"2026-09-14T12:09:16.825Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-b3f0381ccee0","grantee":"u-99c63d92ed33","role":"editor"}
+{"ts":"2026-09-14T12:09:16.825Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b3f0381ccee0","userId":"u-ba86ab5139a9","clientId":"t106e6c11-226013","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:16.829Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b3f0381ccee0","userId":"u-22a2ee66cc78","clientId":"t2ecd18c8-4ea943","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:16.831Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-b3f0381ccee0","userId":"u-99c63d92ed33","clientId":"t3a3cda3f-b3881f","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:16.939Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-cbeffe5bd4bb","username":"t69785513"}
+{"ts":"2026-09-14T12:09:16.963Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-cbeffe5bd4bb"}
+{"ts":"2026-09-14T12:09:16.987Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-f5e2ceb48376","username":"t25f94930"}
+{"ts":"2026-09-14T12:09:17.010Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-f5e2ceb48376"}
+{"ts":"2026-09-14T12:09:17.011Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-e9c7428ebbee","ownerId":"u-cbeffe5bd4bb","title":"C02 insert vs delete"}
+{"ts":"2026-09-14T12:09:17.011Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-e9c7428ebbee","grantee":"u-f5e2ceb48376","role":"editor"}
+{"ts":"2026-09-14T12:09:17.012Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-e9c7428ebbee","userId":"u-cbeffe5bd4bb","clientId":"t69785513-0fecf2","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:17.016Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-e9c7428ebbee","userId":"u-f5e2ceb48376","clientId":"t25f94930-2f937a","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:17.122Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-542c23f1a09d","username":"tad3cf4e1"}
+{"ts":"2026-09-14T12:09:17.145Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-542c23f1a09d"}
+{"ts":"2026-09-14T12:09:17.168Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-8586cd8cd4f1","username":"tb239a2ce"}
+{"ts":"2026-09-14T12:09:17.190Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-8586cd8cd4f1"}
+{"ts":"2026-09-14T12:09:17.191Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-9c0a435d64cd","ownerId":"u-542c23f1a09d","title":"R01 offline"}
+{"ts":"2026-09-14T12:09:17.192Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-9c0a435d64cd","grantee":"u-8586cd8cd4f1","role":"editor"}
+{"ts":"2026-09-14T12:09:17.193Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9c0a435d64cd","userId":"u-542c23f1a09d","clientId":"tad3cf4e1-ea9324","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:17.196Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9c0a435d64cd","userId":"u-8586cd8cd4f1","clientId":"tb239a2ce-ddb8a9","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:17.853Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-9c0a435d64cd","userId":"u-542c23f1a09d","clientId":"tad3cf4e1-ea9324","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:17.922Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-fbd019535378","username":"te31d6a39"}
+{"ts":"2026-09-14T12:09:17.944Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-fbd019535378"}
+{"ts":"2026-09-14T12:09:17.967Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-028c98652e1d","username":"t814ab9fc"}
+{"ts":"2026-09-14T12:09:17.989Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-028c98652e1d"}
+{"ts":"2026-09-14T12:09:17.990Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-94940aed0005","ownerId":"u-fbd019535378","title":"R02 failover"}
+{"ts":"2026-09-14T12:09:17.991Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-94940aed0005","grantee":"u-028c98652e1d","role":"editor"}
+{"ts":"2026-09-14T12:09:17.991Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-94940aed0005","userId":"u-fbd019535378","clientId":"te31d6a39-90de14","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:17.995Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-94940aed0005","userId":"u-028c98652e1d","clientId":"t814ab9fc-453d82","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:18.974Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-94940aed0005","userId":"u-fbd019535378","clientId":"te31d6a39-90de14","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:20.543Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-a765b80d9cdf","username":"t58550c20"}
+{"ts":"2026-09-14T12:09:20.565Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-a765b80d9cdf"}
+{"ts":"2026-09-14T12:09:20.589Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-4f05486604de","username":"t3b68b70a"}
+{"ts":"2026-09-14T12:09:20.611Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-4f05486604de"}
+{"ts":"2026-09-14T12:09:20.613Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-538114392cd7","ownerId":"u-a765b80d9cdf","title":"R03 dup ops"}
+{"ts":"2026-09-14T12:09:20.613Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-538114392cd7","grantee":"u-4f05486604de","role":"editor"}
+{"ts":"2026-09-14T12:09:20.614Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-538114392cd7","userId":"u-a765b80d9cdf","clientId":"t58550c20-4b5d77","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:20.620Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-538114392cd7","userId":"u-4f05486604de","clientId":"t3b68b70a-071f4e","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:21.388Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-2b1007450799","username":"t963b3611"}
+{"ts":"2026-09-14T12:09:21.410Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-2b1007450799"}
+{"ts":"2026-09-14T12:09:21.432Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-90e972c4fa2a","username":"t6ce5322d"}
+{"ts":"2026-09-14T12:09:21.454Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-90e972c4fa2a"}
+{"ts":"2026-09-14T12:09:21.455Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-f58ec995942f","ownerId":"u-2b1007450799","title":"R04 lossy link"}
+{"ts":"2026-09-14T12:09:21.456Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-f58ec995942f","grantee":"u-90e972c4fa2a","role":"editor"}
+{"ts":"2026-09-14T12:09:21.456Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f58ec995942f","userId":"u-2b1007450799","clientId":"t963b3611-ed7b1d","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:21.460Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f58ec995942f","userId":"u-90e972c4fa2a","clientId":"t6ce5322d-4dada7","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:23.510Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-3bfb4dd2aa20","username":"t591ab4b5"}
+{"ts":"2026-09-14T12:09:23.535Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-3bfb4dd2aa20"}
+{"ts":"2026-09-14T12:09:23.559Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-eb9a71fca1d6","username":"t123cd99f"}
+{"ts":"2026-09-14T12:09:23.584Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-eb9a71fca1d6"}
+{"ts":"2026-09-14T12:09:23.585Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-936b56dbc45c","ownerId":"u-3bfb4dd2aa20","title":"R05 storage outage"}
+{"ts":"2026-09-14T12:09:23.586Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-936b56dbc45c","grantee":"u-eb9a71fca1d6","role":"editor"}
+{"ts":"2026-09-14T12:09:23.587Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-936b56dbc45c","userId":"u-3bfb4dd2aa20","clientId":"t591ab4b5-593519","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:23.592Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-936b56dbc45c","userId":"u-eb9a71fca1d6","clientId":"t123cd99f-c77f46","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:28.833Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-026a591a8ea0","username":"t4d866237"}
+{"ts":"2026-09-14T12:09:28.855Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-026a591a8ea0"}
+{"ts":"2026-09-14T12:09:28.877Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-285a074772fd","username":"tdc22cd51"}
+{"ts":"2026-09-14T12:09:28.900Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-285a074772fd"}
+{"ts":"2026-09-14T12:09:28.900Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-0f44f06c43a9","ownerId":"u-026a591a8ea0","title":"R06 snapshot delta"}
+{"ts":"2026-09-14T12:09:28.901Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-0f44f06c43a9","grantee":"u-285a074772fd","role":"editor"}
+{"ts":"2026-09-14T12:09:28.902Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0f44f06c43a9","userId":"u-026a591a8ea0","clientId":"t4d866237-923f01","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:28.906Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0f44f06c43a9","userId":"u-285a074772fd","clientId":"tdc22cd51-100e78","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:29.799Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0f44f06c43a9","userId":"u-026a591a8ea0","clientId":"t4d866237-923f01","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:30.249Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0f44f06c43a9","userId":"u-026a591a8ea0","clientId":"t4d866237-923f01","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:32.563Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-0f44f06c43a9","userId":"u-285a074772fd","clientId":"tdc22cd51-100e78","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:32.592Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-04104d6c1ec2","username":"t0826da41"}
+{"ts":"2026-09-14T12:09:32.615Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-04104d6c1ec2"}
+{"ts":"2026-09-14T12:09:32.639Z","node":"directory-1","level":"warn","event":"login_failed","username":"t0826da41"}
+{"ts":"2026-09-14T12:09:32.666Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-9755fb32dab9","username":"t60c4f1e1"}
+{"ts":"2026-09-14T12:09:32.690Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-9755fb32dab9"}
+{"ts":"2026-09-14T12:09:32.714Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-e98b79d82c87","username":"t68363181"}
+{"ts":"2026-09-14T12:09:32.737Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-e98b79d82c87"}
+{"ts":"2026-09-14T12:09:32.760Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-4a69e7d91ca4","username":"t981977fa"}
+{"ts":"2026-09-14T12:09:32.785Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-4a69e7d91ca4"}
+{"ts":"2026-09-14T12:09:32.786Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-c0ec93f99012","ownerId":"u-9755fb32dab9","title":"S02 acl"}
+{"ts":"2026-09-14T12:09:32.787Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-c0ec93f99012","grantee":"u-e98b79d82c87","role":"viewer"}
+{"ts":"2026-09-14T12:09:32.788Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-c0ec93f99012","userId":"u-9755fb32dab9","clientId":"t60c4f1e1-c40e0c","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:33.093Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-c0ec93f99012","userId":"u-e98b79d82c87","clientId":"t68363181-15e2eb","role":"viewer","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:34.023Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-2ad90323f7c7","username":"t47c342c3"}
+{"ts":"2026-09-14T12:09:34.045Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-2ad90323f7c7"}
+{"ts":"2026-09-14T12:09:34.068Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-58f56525db1d","username":"t4dc81a08"}
+{"ts":"2026-09-14T12:09:34.090Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-58f56525db1d"}
+{"ts":"2026-09-14T12:09:34.091Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-f98fac53ac9b","ownerId":"u-2ad90323f7c7","title":"S03 bad input"}
+{"ts":"2026-09-14T12:09:34.091Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-f98fac53ac9b","grantee":"u-58f56525db1d","role":"editor"}
+{"ts":"2026-09-14T12:09:34.092Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f98fac53ac9b","userId":"u-2ad90323f7c7","clientId":"t47c342c3-a0fc3a","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:34.096Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-f98fac53ac9b","userId":"u-58f56525db1d","clientId":"t4dc81a08-dfc3be","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:35.064Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-47277c9f1c58","username":"t0f4f2cbd"}
+{"ts":"2026-09-14T12:09:35.087Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-47277c9f1c58"}
+{"ts":"2026-09-14T12:09:35.109Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-d01edf2998a2","username":"t814e1ad9"}
+{"ts":"2026-09-14T12:09:35.133Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-d01edf2998a2"}
+{"ts":"2026-09-14T12:09:35.134Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-966e72a8b55f","ownerId":"u-47277c9f1c58","title":"S04 live revocation"}
+{"ts":"2026-09-14T12:09:35.135Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-966e72a8b55f","grantee":"u-d01edf2998a2","role":"editor"}
+{"ts":"2026-09-14T12:09:35.135Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-966e72a8b55f","userId":"u-47277c9f1c58","clientId":"t0f4f2cbd-99402b","role":"owner","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:35.139Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-966e72a8b55f","userId":"u-d01edf2998a2","clientId":"t814e1ad9-ba9d71","role":"editor","primary":"collab-1"}
+{"ts":"2026-09-14T12:09:35.182Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-966e72a8b55f","grantee":"u-d01edf2998a2","role":"viewer"}
+{"ts":"2026-09-14T12:09:38.684Z","node":"directory-1","level":"info","event":"role_changed_since_token","docId":"doc-966e72a8b55f","userId":"u-d01edf2998a2","was":"editor","now":"viewer"}
+{"ts":"2026-09-14T12:09:40.808Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-c0e6c9cb067d","username":"pffd37db1"}
+{"ts":"2026-09-14T12:09:40.831Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-c0e6c9cb067d"}
+{"ts":"2026-09-14T12:09:40.854Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-b27cdfc44088","username":"p2704e4d6"}
+{"ts":"2026-09-14T12:09:40.876Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-b27cdfc44088"}
+{"ts":"2026-09-14T12:09:40.900Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-a11492f9c24d","username":"pbf71bfb6"}
+{"ts":"2026-09-14T12:09:40.922Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-a11492f9c24d"}
+{"ts":"2026-09-14T12:09:40.945Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-4f2acf5396f4","username":"p90bbd24a"}
+{"ts":"2026-09-14T12:09:40.967Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-4f2acf5396f4"}
+{"ts":"2026-09-14T12:09:40.989Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-bad575f70338","username":"p57fbf666"}
+{"ts":"2026-09-14T12:09:41.012Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-bad575f70338"}
+{"ts":"2026-09-14T12:09:41.034Z","node":"directory-1","level":"info","event":"user_registered","userId":"u-303ec5621073","username":"p39f98d99"}
+{"ts":"2026-09-14T12:09:41.057Z","node":"directory-1","level":"info","event":"login_ok","userId":"u-303ec5621073"}
+{"ts":"2026-09-14T12:09:41.058Z","node":"directory-1","level":"info","event":"doc_created","docId":"doc-d1142db66252","ownerId":"u-c0e6c9cb067d","title":"P01 perf"}
+{"ts":"2026-09-14T12:09:41.058Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-d1142db66252","grantee":"u-b27cdfc44088","role":"editor"}
+{"ts":"2026-09-14T12:09:41.059Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-d1142db66252","grantee":"u-a11492f9c24d","role":"editor"}
+{"ts":"2026-09-14T12:09:41.060Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-d1142db66252","grantee":"u-4f2acf5396f4","role":"editor"}
+{"ts":"2026-09-14T12:09:41.061Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-d1142db66252","grantee":"u-bad575f70338","role":"editor"}
+{"ts":"2026-09-14T12:09:41.062Z","node":"directory-1","level":"info","event":"doc_shared","docId":"doc-d1142db66252","grantee":"u-303ec5621073","role":"editor"}
+{"ts":"2026-09-14T12:09:41.063Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d1142db66252","userId":"u-c0e6c9cb067d","clientId":"pffd37db1-576949","role":"owner","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:41.067Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d1142db66252","userId":"u-b27cdfc44088","clientId":"p2704e4d6-788147","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:41.071Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d1142db66252","userId":"u-a11492f9c24d","clientId":"pbf71bfb6-db63ad","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:41.074Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d1142db66252","userId":"u-4f2acf5396f4","clientId":"p90bbd24a-bf1adf","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:41.076Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d1142db66252","userId":"u-bad575f70338","clientId":"p57fbf666-32bbc5","role":"editor","primary":"collab-2"}
+{"ts":"2026-09-14T12:09:41.079Z","node":"directory-1","level":"info","event":"session_issued","docId":"doc-d1142db66252","userId":"u-303ec5621073","clientId":"p39f98d99-aa45e6","role":"editor","primary":"collab-2"}

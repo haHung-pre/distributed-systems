@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoEdit-DS — Distributed Collaborative Editor</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2a2f3a;
+    --txt:#e6e9ef; --muted:#8b93a7; --accent:#4c8dff; --ok:#35c26a; --warn:#f0a92c; --err:#ef5350;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--txt)}
+  header{display:flex;align-items:center;gap:14px;padding:10px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+  header h1{font-size:15px;margin:0;font-weight:650;letter-spacing:.2px}
+  header .tag{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:2px 9px}
+  .spacer{flex:1}
+  .wrap{display:grid;grid-template-columns:290px 1fr;gap:0;height:calc(100vh - 47px)}
+  aside{background:var(--panel);border-right:1px solid var(--line);padding:14px;overflow:auto}
+  main{display:flex;flex-direction:column;min-width:0}
+  h2{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin:18px 0 8px}
+  h2:first-child{margin-top:0}
+  input,button,select{font:inherit;border-radius:7px;border:1px solid var(--line);background:var(--panel2);color:var(--txt);padding:7px 10px;width:100%}
+  button{background:var(--accent);border-color:var(--accent);color:#fff;cursor:pointer;font-weight:600}
+  button:hover{filter:brightness(1.08)} button:disabled{opacity:.45;cursor:not-allowed}
+  button.ghost{background:transparent;color:var(--txt);border-color:var(--line);font-weight:500}
+  .row{display:flex;gap:8px;margin-bottom:8px}
+  .row>*{flex:1}
+  .doc{padding:8px 10px;border:1px solid var(--line);border-radius:7px;margin-bottom:6px;cursor:pointer;background:var(--panel2)}
+  .doc:hover{border-color:var(--accent)}
+  .doc.active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+  .doc .t{font-weight:600;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .doc .m{font-size:11px;color:var(--muted);font-family:ui-monospace,Menlo,Consolas,monospace}
+  .bar{display:flex;align-items:center;gap:10px;padding:8px 16px;background:var(--panel2);border-bottom:1px solid var(--line);font-size:12px;flex-wrap:wrap}
+  .pill{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:99px;border:1px solid var(--line);background:var(--panel)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+  .dot.ok{background:var(--ok)} .dot.warn{background:var(--warn)} .dot.err{background:var(--err)}
+  #editor{flex:1;width:100%;border:0;outline:none;resize:none;background:#12151b;color:var(--txt);
+    padding:22px 26px;font:14.5px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  #editor:disabled{opacity:.7}
+  .who{display:flex;gap:6px;flex-wrap:wrap}
+  .who span{font-size:11px;padding:2px 8px;border-radius:99px;color:#0b0d12;font-weight:700}
+  #log{height:190px;overflow:auto;background:#0b0d12;border-top:1px solid var(--line);
+    font:11.5px/1.55 ui-monospace,Menlo,Consolas,monospace;padding:8px 12px;color:#9fb0c9}
+  #log div{white-space:pre-wrap;word-break:break-word}
+  .lg-info{color:#9fb0c9}.lg-ok{color:var(--ok)}.lg-warn{color:var(--warn)}.lg-err{color:var(--err)}.lg-net{color:#7aa2f7}
+  .muted{color:var(--muted);font-size:12px}
+  .kv{display:flex;justify-content:space-between;font-size:12px;padding:3px 0;border-bottom:1px dashed var(--line)}
+  .kv b{font-weight:600;font-family:ui-monospace,Menlo,Consolas,monospace;color:#cfd6e4}
+  .hidden{display:none}
+  .err{color:var(--err);font-size:12px;min-height:16px}
+</style>
+</head>
+<body>
+<header>
+  <h1>CoEdit-DS</h1>
+  <span class="tag">RGA CRDT</span>
+  <span class="tag">WebSocket</span>
+  <span class="tag" id="tagReplica">replica: —</span>
+  <div class="spacer"></div>
+  <span class="muted" id="whoami">not signed in</span>
+  <button class="ghost hidden" id="btnLogout" style="width:auto">Sign out</button>
+</header>
+
+<div class="wrap">
+  <aside>
+    <!-- ---------------- auth ---------------- -->
+    <section id="paneAuth">
+      <h2>Sign in</h2>
+      <div class="row"><input id="user" placeholder="username" autocomplete="username"></div>
+      <div class="row"><input id="pass" type="password" placeholder="password (min 8)" autocomplete="current-password"></div>
+      <div class="row">
+        <button id="btnLogin">Login</button>
+        <button id="btnRegister" class="ghost">Register</button>
+      </div>
+      <div class="err" id="authErr"></div>
+      <p class="muted">Open this page in 3 tabs and sign in as different users to demonstrate 3 concurrent clients.</p>
+    </section>
+
+    <!-- ---------------- docs ---------------- -->
+    <section id="paneDocs" class="hidden">
+      <h2>Documents</h2>
+      <div class="row"><input id="newTitle" placeholder="new document title"></div>
+      <div class="row"><button id="btnCreate">Create</button><button id="btnRefresh" class="ghost">Refresh</button></div>
+      <div id="docs"></div>
+
+      <h2>Share</h2>
+      <div class="row"><input id="shareUser" placeholder="username"></div>
+      <div class="row">
+        <select id="shareRole"><option value="editor">editor</option><option value="viewer">viewer</option></select>
+        <button id="btnShare">Grant</button>
+      </div>
+      <div class="err" id="shareErr"></div>
+
+      <h2>Session</h2>
+      <div class="kv"><span>client id</span><b id="kClient">—</b></div>
+      <div class="kv"><span>replica</span><b id="kReplica">—</b></div>
+      <div class="kv"><span>role</span><b id="kRole">—</b></div>
+      <div class="kv"><span>ops sent / ack</span><b id="kOps">0 / 0</b></div>
+      <div class="kv"><span>ops received</span><b id="kRecv">0</b></div>
+      <div class="kv"><span>reconnects</span><b id="kRe">0</b></div>
+      <div class="kv"><span>failovers</span><b id="kFo">0</b></div>
+      <div class="kv"><span>pending (causal)</span><b id="kPend">0</b></div>
+      <div class="kv"><span>doc chars</span><b id="kLen">0</b></div>
+
+      <h2>Fault injection</h2>
+      <div class="row"><button id="btnKill" class="ghost">Drop my socket</button></div>
+      <div class="row"><button id="btnOffline" class="ghost">Go offline / online</button></div>
+      <p class="muted">Offline edits are buffered locally and replayed on reconnect.</p>
+    </section>
+  </aside>
+
+  <main>
+    <div class="bar">
+      <span class="pill"><span class="dot" id="dotConn"></span><span id="txtConn">disconnected</span></span>
+      <span class="pill" id="pillTitle">no document</span>
+      <span class="pill" id="pillPath">—</span>
+      <div class="who" id="who"></div>
+      <div class="spacer"></div>
+      <span class="muted" id="convergence">—</span>
+    </div>
+    <textarea id="editor" spellcheck="false" disabled placeholder="Sign in, create or pick a document, and start typing…"></textarea>
+    <div id="log"></div>
+  </main>
+</div>
+
+<script src="rga.browser.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

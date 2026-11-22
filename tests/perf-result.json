@@ -1,0 +1,40 @@
+{
+  "clients": 6,
+  "opsPerClient": 40,
+  "totalOps": 240,
+  "replicas": 2,
+  "latencyMs": {
+    "p50": 1,
+    "p95": 1,
+    "min": 0,
+    "max": 1,
+    "samples": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "submitMs": 183,
+  "throughputOpsPerSec": 1311,
+  "convergeMs": 0,
+  "finalLength": 270,
+  "perReplica": [
+    {
+      "id": "collab-1",
+      "len": 270,
+      "same": true
+    },
+    {
+      "id": "collab-2",
+      "len": 270,
+      "same": true
+    }
+  ]
+}

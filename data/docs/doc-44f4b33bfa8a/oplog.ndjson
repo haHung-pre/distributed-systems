@@ -1,0 +1,23 @@
+{"seq":1,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":1,"lam":1,"after":"ROOT","ch":"w","id":"t20e0926a-edcd3c:1"},"at":1789387755306,"by":"collab-2"}
+{"seq":2,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":2,"lam":2,"after":"t20e0926a-edcd3c:1","ch":"r","id":"t20e0926a-edcd3c:2"},"at":1789387755306,"by":"collab-2"}
+{"seq":3,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":3,"lam":3,"after":"t20e0926a-edcd3c:2","ch":"i","id":"t20e0926a-edcd3c:3"},"at":1789387755306,"by":"collab-2"}
+{"seq":4,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":4,"lam":4,"after":"t20e0926a-edcd3c:3","ch":"t","id":"t20e0926a-edcd3c:4"},"at":1789387755306,"by":"collab-2"}
+{"seq":5,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":5,"lam":5,"after":"t20e0926a-edcd3c:4","ch":"t","id":"t20e0926a-edcd3c:5"},"at":1789387755306,"by":"collab-2"}
+{"seq":6,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":6,"lam":6,"after":"t20e0926a-edcd3c:5","ch":"e","id":"t20e0926a-edcd3c:6"},"at":1789387755306,"by":"collab-2"}
+{"seq":7,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":7,"lam":7,"after":"t20e0926a-edcd3c:6","ch":"n","id":"t20e0926a-edcd3c:7"},"at":1789387755306,"by":"collab-2"}
+{"seq":8,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":8,"lam":8,"after":"t20e0926a-edcd3c:7","ch":" ","id":"t20e0926a-edcd3c:8"},"at":1789387755306,"by":"collab-2"}
+{"seq":9,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":9,"lam":9,"after":"t20e0926a-edcd3c:8","ch":"b","id":"t20e0926a-edcd3c:9"},"at":1789387755306,"by":"collab-2"}
+{"seq":10,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":10,"lam":10,"after":"t20e0926a-edcd3c:9","ch":"e","id":"t20e0926a-edcd3c:10"},"at":1789387755306,"by":"collab-2"}
+{"seq":11,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":11,"lam":11,"after":"t20e0926a-edcd3c:10","ch":"f","id":"t20e0926a-edcd3c:11"},"at":1789387755306,"by":"collab-2"}
+{"seq":12,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":12,"lam":12,"after":"t20e0926a-edcd3c:11","ch":"o","id":"t20e0926a-edcd3c:12"},"at":1789387755306,"by":"collab-2"}
+{"seq":13,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":13,"lam":13,"after":"t20e0926a-edcd3c:12","ch":"r","id":"t20e0926a-edcd3c:13"},"at":1789387755306,"by":"collab-2"}
+{"seq":14,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":14,"lam":14,"after":"t20e0926a-edcd3c:13","ch":"e","id":"t20e0926a-edcd3c:14"},"at":1789387755306,"by":"collab-2"}
+{"seq":15,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":15,"lam":15,"after":"t20e0926a-edcd3c:14","ch":" ","id":"t20e0926a-edcd3c:15"},"at":1789387755306,"by":"collab-2"}
+{"seq":16,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":16,"lam":16,"after":"t20e0926a-edcd3c:15","ch":"C","id":"t20e0926a-edcd3c:16"},"at":1789387755306,"by":"collab-2"}
+{"seq":17,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":17,"lam":17,"after":"t20e0926a-edcd3c:16","ch":" ","id":"t20e0926a-edcd3c:17"},"at":1789387755306,"by":"collab-2"}
+{"seq":18,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":18,"lam":18,"after":"t20e0926a-edcd3c:17","ch":"j","id":"t20e0926a-edcd3c:18"},"at":1789387755306,"by":"collab-2"}
+{"seq":19,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":19,"lam":19,"after":"t20e0926a-edcd3c:18","ch":"o","id":"t20e0926a-edcd3c:19"},"at":1789387755306,"by":"collab-2"}
+{"seq":20,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":20,"lam":20,"after":"t20e0926a-edcd3c:19","ch":"i","id":"t20e0926a-edcd3c:20"},"at":1789387755306,"by":"collab-2"}
+{"seq":21,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":21,"lam":21,"after":"t20e0926a-edcd3c:20","ch":"n","id":"t20e0926a-edcd3c:21"},"at":1789387755306,"by":"collab-2"}
+{"seq":22,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":22,"lam":22,"after":"t20e0926a-edcd3c:21","ch":"e","id":"t20e0926a-edcd3c:22"},"at":1789387755306,"by":"collab-2"}
+{"seq":23,"op":{"t":"ins","site":"t20e0926a-edcd3c","ctr":23,"lam":23,"after":"t20e0926a-edcd3c:22","ch":"d","id":"t20e0926a-edcd3c:23"},"at":1789387755306,"by":"collab-2"}

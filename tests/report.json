@@ -1,0 +1,269 @@
+{
+  "generatedAt": "2026-09-14T12:09:41.880Z",
+  "pass": 23,
+  "fail": 0,
+  "total": 23,
+  "durationMs": 27866,
+  "results": [
+    {
+      "id": "F01",
+      "name": "Register, login and issue a document session ticket",
+      "category": "Functional tests",
+      "status": "pass",
+      "ms": 56,
+      "error": null,
+      "notes": [
+        "ticket → collab-2 (ws://127.0.0.1:7202), clientId=tf45e2e91-d195c0"
+      ]
+    },
+    {
+      "id": "F02",
+      "name": "Three clients open the same document and see each other",
+      "category": "Functional tests",
+      "status": "pass",
+      "ms": 579,
+      "error": null,
+      "notes": [
+        "presence: t1ed69b64, t2752f8ab, ta9004d08"
+      ]
+    },
+    {
+      "id": "F03",
+      "name": "One client edits, the others receive the update",
+      "category": "Functional tests",
+      "status": "pass",
+      "ms": 153,
+      "error": null,
+      "notes": [
+        "propagated to 2 peers; replicas: collab-2/collab-2/collab-2"
+      ]
+    },
+    {
+      "id": "F04",
+      "name": "Insert and delete operations synchronise correctly",
+      "category": "Functional tests",
+      "status": "pass",
+      "ms": 102,
+      "error": null,
+      "notes": [
+        "final text: \"Hello world\""
+      ]
+    },
+    {
+      "id": "F05",
+      "name": "A late-joining client is synchronised with the full document",
+      "category": "Functional tests",
+      "status": "pass",
+      "ms": 455,
+      "error": null,
+      "notes": [
+        "late joiner received 23 chars via snapshot"
+      ]
+    },
+    {
+      "id": "F06",
+      "name": "Operations carry id, clientId, docId, type and version metadata",
+      "category": "Functional tests",
+      "status": "pass",
+      "ms": 253,
+      "error": null,
+      "notes": [
+        "op = {\"t\":\"ins\",\"site\":\"tdb11a853-4c0733\",\"ctr\":1,\"lam\":1,\"after\":\"ROOT\",\"ch\":\"x\",\"id\":\"tdb11a853-4c0733:1\"}"
+      ]
+    },
+    {
+      "id": "F07",
+      "name": "Document state survives a full restart of the collaboration replica",
+      "category": "Functional tests",
+      "status": "pass",
+      "ms": 964,
+      "error": null,
+      "notes": [
+        "storage seq=17, rebuilt on collab-2 from the op log"
+      ]
+    },
+    {
+      "id": "F08",
+      "name": "Owner can grant access; the document list reflects roles",
+      "category": "Functional tests",
+      "status": "pass",
+      "ms": 95,
+      "error": null,
+      "notes": [
+        "role granted: viewer"
+      ]
+    },
+    {
+      "id": "C01",
+      "name": "Three clients insert at the SAME position simultaneously → convergence",
+      "category": "Concurrency and conflict tests",
+      "status": "pass",
+      "ms": 243,
+      "error": null,
+      "notes": [
+        "converged text: \"START|<C><B><A>END\" (deterministic RGA order, identical on all 3 replicas)"
+      ]
+    },
+    {
+      "id": "C02",
+      "name": "One client inserts while another deletes the same region → convergence",
+      "category": "Concurrency and conflict tests",
+      "status": "pass",
+      "ms": 184,
+      "error": null,
+      "notes": [
+        "A on collab-1, B on collab-2 → \"ab###ghij\""
+      ]
+    },
+    {
+      "id": "R01",
+      "name": "A client loses connectivity, keeps editing offline, then re-syncs",
+      "category": "Fault tolerance and recovery tests",
+      "status": "pass",
+      "ms": 797,
+      "error": null,
+      "notes": [
+        "reconnected to collab-1; converged: \"base+online+offline\""
+      ]
+    },
+    {
+      "id": "R02",
+      "name": "A collaboration replica is killed → clients fail over and converge",
+      "category": "Fault tolerance and recovery tests",
+      "status": "pass",
+      "ms": 2623,
+      "error": null,
+      "notes": [
+        "SIGKILL sent to collab-1 (pid 3360)",
+        "failover completed in 239ms → collab-2; converged \"before-crash after-failover\""
+      ]
+    },
+    {
+      "id": "R03",
+      "name": "Duplicated and out-of-order operations are absorbed idempotently",
+      "category": "Fault tolerance and recovery tests",
+      "status": "pass",
+      "ms": 845,
+      "error": null,
+      "notes": [
+        "replayed 3 ops; text still \"dup\""
+      ]
+    },
+    {
+      "id": "R04",
+      "name": "Lost broadcast frames are repaired by anti-entropy re-sync",
+      "category": "Fault tolerance and recovery tests",
+      "status": "pass",
+      "ms": 2119,
+      "error": null,
+      "notes": [
+        "10 ops frame(s) dropped on the wire",
+        "converged to 24 chars via periodic version-vector re-sync"
+      ]
+    },
+    {
+      "id": "R05",
+      "name": "Storage outage → ops buffered in a dead-letter queue and drained on recovery",
+      "category": "Fault tolerance and recovery tests",
+      "status": "pass",
+      "ms": 5326,
+      "error": null,
+      "notes": [
+        "storage down: dlq=14, live editing unaffected (availability preserved)",
+        "recovered: dlq drained to 0, storage holds 28 ops — no data loss"
+      ]
+    },
+    {
+      "id": "R06",
+      "name": "Reconnect across a snapshot + replica restart still converges (no silent op loss)",
+      "category": "Fault tolerance and recovery tests",
+      "status": "pass",
+      "ms": 3757,
+      "error": null,
+      "notes": [
+        "snapshot taken at seq=225 (threshold 200)",
+        "B resumed from vv={\"t4d866237-923f01\":5} across a snapshot restore and recovered all 225 chars"
+      ]
+    },
+    {
+      "id": "R07",
+      "name": "A snapshot preserves history for delta sync (or refuses to serve a partial delta)",
+      "category": "Fault tolerance and recovery tests",
+      "status": "pass",
+      "ms": 1,
+      "error": null,
+      "notes": [
+        "v2 snapshot carries 11 ops; v1 fallback correctly reports delta unavailable"
+      ]
+    },
+    {
+      "id": "S01",
+      "name": "Unauthenticated and forged tokens are rejected; passwords are hashed",
+      "category": "Security and invalid-data tests",
+      "status": "pass",
+      "ms": 72,
+      "error": null,
+      "notes": [
+        "missing/garbage/forged tokens rejected; PBKDF2 hashes on disk; wrong password rejected"
+      ]
+    },
+    {
+      "id": "S02",
+      "name": "Access control: a viewer cannot write, a stranger cannot read",
+      "category": "Security and invalid-data tests",
+      "status": "pass",
+      "ms": 1358,
+      "error": null,
+      "notes": [
+        "stranger read denied, viewer write denied (403), viewer re-share denied"
+      ]
+    },
+    {
+      "id": "S03",
+      "name": "Malformed / spoofed / oversized input is rejected safely",
+      "category": "Security and invalid-data tests",
+      "status": "pass",
+      "ms": 1042,
+      "error": null,
+      "notes": [
+        "rejections: 400, 403, 400; document unaffected and session still alive"
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "Revoking edit rights takes effect on an ALREADY-OPEN session",
+      "category": "Security and invalid-data tests",
+      "status": "pass",
+      "ms": 5145,
+      "error": null,
+      "notes": [
+        "revocation enforced on the live socket: 2x 403, document intact"
+      ]
+    },
+    {
+      "id": "S05",
+      "name": "Operations with unresolvable dependencies cannot grow memory without bound",
+      "category": "Security and invalid-data tests",
+      "status": "pass",
+      "ms": 599,
+      "error": null,
+      "notes": [
+        "20000 hostile ops capped at 1 parked (20000 shed); causal reordering still works"
+      ]
+    },
+    {
+      "id": "P01",
+      "name": "Throughput, propagation latency and convergence with N concurrent editors",
+      "category": "Performance and scalability experiment",
+      "status": "pass",
+      "ms": 1095,
+      "error": null,
+      "notes": [
+        "6 clients spread over 2 replica(s): collab-1, collab-2, collab-1, collab-2, collab-1, collab-2",
+        "propagation latency p50=1ms p95=1ms (min 0ms, max 1ms)",
+        "240 ops submitted in 183ms ≈ 1311 ops/s; converged 0ms after the last op",
+        "final document 270 chars; identical on 2 replica(s) and 6 clients"
+      ]
+    }
+  ]
+}

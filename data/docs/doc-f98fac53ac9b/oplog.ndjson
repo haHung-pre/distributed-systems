@@ -1,0 +1,6 @@
+{"seq":1,"op":{"t":"ins","site":"t47c342c3-a0fc3a","ctr":1,"lam":1,"after":"ROOT","ch":"c","id":"t47c342c3-a0fc3a:1"},"at":1789387774350,"by":"collab-1"}
+{"seq":2,"op":{"t":"ins","site":"t47c342c3-a0fc3a","ctr":2,"lam":2,"after":"t47c342c3-a0fc3a:1","ch":"l","id":"t47c342c3-a0fc3a:2"},"at":1789387774350,"by":"collab-1"}
+{"seq":3,"op":{"t":"ins","site":"t47c342c3-a0fc3a","ctr":3,"lam":3,"after":"t47c342c3-a0fc3a:2","ch":"e","id":"t47c342c3-a0fc3a:3"},"at":1789387774350,"by":"collab-1"}
+{"seq":4,"op":{"t":"ins","site":"t47c342c3-a0fc3a","ctr":4,"lam":4,"after":"t47c342c3-a0fc3a:3","ch":"a","id":"t47c342c3-a0fc3a:4"},"at":1789387774350,"by":"collab-1"}
+{"seq":5,"op":{"t":"ins","site":"t47c342c3-a0fc3a","ctr":5,"lam":5,"after":"t47c342c3-a0fc3a:4","ch":"n","id":"t47c342c3-a0fc3a:5"},"at":1789387774350,"by":"collab-1"}
+{"seq":6,"op":{"t":"ins","site":"t47c342c3-a0fc3a","ctr":6,"lam":6,"after":"t47c342c3-a0fc3a:5","ch":"!","id":"t47c342c3-a0fc3a:6"},"at":1789387775062,"by":"collab-1"}
