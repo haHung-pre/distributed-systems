@@ -525,8 +525,8 @@ cross-checks them on randomised operation sequences.
 | Member | Student ID | Responsibility | Main files |
 |---|---|---|---|
 | Ari | B23DCAT500 | CRDT core, convergence proofs, concurrency tests | `src/common/crdt/`, `tests` C01–C02, R03–R04 |
-| Nguyễn Cảnh Đức Anh | B23DCCE006 | Collaboration replicas, replication mesh, presence, durability & DLQ | `src/collab/`, `src/storage/`, tests F05–F07, R05 |
-| Nguyễn Đức Hà Hùng | B23DCCE039 | Directory (auth/discovery/leases/ACL), gateway, web + CLI clients, failover, security tests | `src/directory/`, `src/gateway/`, `src/client/`, tests S01–S03, R01–R02 |
+| Nguyễn Đức Hà Hùng | B23DCCE039 | Collaboration replicas, replication mesh, presence, durability & DLQ | `src/collab/`, `src/storage/`, tests F05–F07, R05 |
+| Nguyễn Cảnh Đức Anh | B23DCCE006 | Directory (auth/discovery/leases/ACL), gateway, web + CLI clients, failover, security tests | `src/directory/`, `src/gateway/`, `src/client/`, tests S01–S03, R01–R02 |
 
 Every member must be able to explain the overall architecture as well as their
 own part.
