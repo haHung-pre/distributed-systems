@@ -524,9 +524,9 @@ cross-checks them on randomised operation sequences.
 
 | Member | Student ID | Responsibility | Main files |
 |---|---|---|---|
-| *Member 1* | *ID* | CRDT core, convergence proofs, concurrency tests | `src/common/crdt/`, `tests` C01–C02, R03–R04 |
-| *Member 2* | *ID* | Collaboration replicas, replication mesh, presence, durability & DLQ | `src/collab/`, `src/storage/`, tests F05–F07, R05 |
-| *Member 3* | *ID* | Directory (auth/discovery/leases/ACL), gateway, web + CLI clients, failover, security tests | `src/directory/`, `src/gateway/`, `src/client/`, tests S01–S03, R01–R02 |
+| Ari | B23DCAT500 | CRDT core, convergence proofs, concurrency tests | `src/common/crdt/`, `tests` C01–C02, R03–R04 |
+| Nguyễn Cảnh Đức Anh | B23DCCE006 | Collaboration replicas, replication mesh, presence, durability & DLQ | `src/collab/`, `src/storage/`, tests F05–F07, R05 |
+| Nguyễn Đức Hà Hùng | B23DCCE039 | Directory (auth/discovery/leases/ACL), gateway, web + CLI clients, failover, security tests | `src/directory/`, `src/gateway/`, `src/client/`, tests S01–S03, R01–R02 |
 
 Every member must be able to explain the overall architecture as well as their
 own part.
@@ -596,8 +596,3 @@ Stated honestly, because the oral examination will probe them:
 Everything else — the RGA implementation, the replication mesh, discovery and
 leasing, the persistence layer, the protocol, the clients, the harness and all
 tests — was written by the group for this project.
-
-**Declaration.** AI assistance was used during development. Every algorithm,
-design decision and line of delivered code has been reviewed, tested and is
-understood by the group, which takes full responsibility for the result. The
-sources above are cited for the algorithms they contributed.
